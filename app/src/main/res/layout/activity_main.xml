@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+        <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/urlbar"
+                android:layout_width="318dp"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:text="Search or Enter URL"
+                android:textIsSelectable="true"/>
+
+
+            <Button
+                android:id="@+id/gobutton"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="GO" />
+            <Button
+                android:id = "@+id/newtab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text = "Back"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/forwardbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Forward"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/Bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmark"
+            android:textAllCaps="false"/>
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/tablayout">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tab1"
+
+           />
+
+    </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+
+
+
+    </WebView>
+
+
+</LinearLayout>
+
