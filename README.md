@@ -1,5 +1,4 @@
 # AndroidWebBrowser
-Academic assignment
 
 I made this browser for one of assignments in master of software development program at Victoria University of Wellington.
 
